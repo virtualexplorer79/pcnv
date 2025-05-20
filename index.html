@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PCNV - PC No Virus</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
     header {
       background-color: #0078d4;
@@ -80,84 +79,93 @@
   </nav>
 
   <div class="container">
+    <!-- Oyun Launchers -->
     <div class="card launcher">
       <h3>Steam</h3>
       <p>Popüler oyun platformu.</p>
       <p><strong>Sürüm:</strong> Son</p>
       <p><strong>Windows:</strong> 7/8/10/11</p>
-      <a href="https://pixeldrain.com/u/83LzZxE3">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/83LzZxE3" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
+    <!-- Sistem Araçları -->
     <div class="card system">
       <h3>CPU-Z</h3>
       <p>Donanım bilgilerini gösteren araç.</p>
       <p><strong>Sürüm:</strong> 2.09</p>
       <p><strong>Windows:</strong> XP ve sonrası</p>
-      <a href="https://pixeldrain.com/u/5T6Sn9pN">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/5T6Sn9pN" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
+    <!-- Medya Oynatıcılar -->
     <div class="card media">
       <h3>VLC Media Player</h3>
       <p>Tüm formatları oynatabilen medya oynatıcı.</p>
       <p><strong>Sürüm:</strong> 3.0.20</p>
       <p><strong>Windows:</strong> 7 ve üzeri</p>
-      <a href="https://pixeldrain.com/u/STWPg4gY">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/STWPg4gY" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
+    <!-- Kod Editörleri -->
     <div class="card editor">
       <h3>Visual Studio Code</h3>
       <p>Modern kod editörü.</p>
       <p><strong>Sürüm:</strong> 1.89</p>
       <p><strong>Windows:</strong> 8.1/10/11</p>
-      <a href="https://pixeldrain.com/u/YSNJUsts">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/YSNJUsts" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
+    <!-- Portable EXE'ler -->
     <div class="card portable">
       <h3>Rufus Portable</h3>
       <p>Bootable USB hazırlamak için hafif araç.</p>
       <p><strong>Sürüm:</strong> 4.3</p>
       <p><strong>Windows:</strong> 7 ve üzeri</p>
-      <a href="https://pixeldrain.com/u/ZKUiwDDj">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/ZKUiwDDj" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
+    <!-- Tarayıcılar -->
     <div class="card browser">
       <h3>Firefox 76</h3>
       <p>Eski sürüm tarayıcı arayanlar için ideal.</p>
       <p><strong>Windows:</strong> 7 ve üzeri</p>
-      <a href="https://pixeldrain.com/u/b2ho7zvx">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/b2ho7zvx" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
     <div class="card browser">
       <h3>Firefox 47</h3>
       <p>XP/Vista için uyumlu eski sürüm tarayıcı.</p>
       <p><strong>Windows:</strong> XP/Vista</p>
-      <a href="https://pixeldrain.com/u/CQycuanU">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/CQycuanU" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
     <div class="card browser">
       <h3>Opera 95</h3>
       <p>Yeni nesil tarayıcı.</p>
       <p><strong>Windows:</strong> 10/11</p>
-      <a href="https://pixeldrain.com/u/TsNiTnMM">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/TsNiTnMM" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
 
     <div class="card browser">
       <h3>Opera 36</h3>
       <p>Düşük sistemler için hafif sürüm.</p>
       <p><strong>Windows:</strong> XP/Vista/7</p>
-      <a href="https://pixeldrain.com/u/wALRrvoQ">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+      <a href="https://pixeldrain.com/u/wALRrvoQ" target="_blank" rel="noopener">Pixeldrain'dan İndir</a>
     </div>
-
   </div>
 
   <script>
     function filterCards(category) {
       const cards = document.querySelectorAll('.card');
       cards.forEach(card => {
-        card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
       });
     }
-    // Sayfa açıldığında tüm kartları göster
+    // Sayfa açıldığında tüm programları göster
     filterCards('all');
   </script>
 </body>
