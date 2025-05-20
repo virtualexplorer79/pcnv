@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCNV - PC No Virus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0078d4;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #e0e0e0;
+      padding: 0.5rem;
+    }
+    nav button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #0078d4;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    nav button:hover {
+      background: #005fa3;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1rem;
+      width: 280px;
+      display: none;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PCNV - PC No Virus</h1>
+    <p>Güvenli, test edilmiş, virüssüz programlar</p>
+  </header>
+
+  <nav>
+    <button onclick="filterCards('all')">Tümü</button>
+    <button onclick="filterCards('launcher')">Oyun Launchers</button>
+    <button onclick="filterCards('system')">Sistem Araçları</button>
+    <button onclick="filterCards('media')">Medya Oynatıcılar</button>
+    <button onclick="filterCards('editor')">Kod Editörleri</button>
+    <button onclick="filterCards('portable')">Portable EXE'ler</button>
+    <button onclick="filterCards('browser')">Tarayıcılar</button>
+  </nav>
+
+  <div class="container">
+    <div class="card launcher">
+      <h3>Steam</h3>
+      <p>Popüler oyun platformu.</p>
+      <p><strong>Sürüm:</strong> Son</p>
+      <p><strong>Windows:</strong> 7/8/10/11</p>
+      <a href="https://pixeldrain.com/u/steam123">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card system">
+      <h3>CPU-Z</h3>
+      <p>Donanım bilgilerini gösteren araç.</p>
+      <p><strong>Sürüm:</strong> 2.09</p>
+      <p><strong>Windows:</strong> XP ve sonrası</p>
+      <a href="https://pixeldrain.com/u/cpuz456">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card media">
+      <h3>VLC Media Player</h3>
+      <p>Tüm formatları oynatabilen medya oynatıcı.</p>
+      <p><strong>Sürüm:</strong> 3.0.20</p>
+      <p><strong>Windows:</strong> 7 ve üzeri</p>
+      <a href="https://pixeldrain.com/u/vlc789">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card editor">
+      <h3>Visual Studio Code</h3>
+      <p>Modern kod editörü.</p>
+      <p><strong>Sürüm:</strong> 1.89</p>
+      <p><strong>Windows:</strong> 8.1/10/11</p>
+      <a href="https://pixeldrain.com/u/vscode111">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card portable">
+      <h3>Rufus Portable</h3>
+      <p>Bootable USB hazırlamak için hafif araç.</p>
+      <p><strong>Sürüm:</strong> 4.3</p>
+      <p><strong>Windows:</strong> 7 ve üzeri</p>
+      <a href="https://pixeldrain.com/u/rufus999">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card browser">
+      <h3>Firefox 76</h3>
+      <p>Eski sürüm tarayıcı arayanlar için ideal.</p>
+      <p><strong>Windows:</strong> 7 ve üzeri</p>
+      <a href="https://pixeldrain.com/u/b2ho7zvx">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card browser">
+      <h3>Firefox 47</h3>
+      <p>XP/Vista için uyumlu eski sürüm tarayıcı.</p>
+      <p><strong>Windows:</strong> XP/Vista</p>
+      <a href="https://pixeldrain.com/u/CQycuanU">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card browser">
+      <h3>Opera 95</h3>
+      <p>Yeni nesil tarayıcı.</p>
+      <p><strong>Windows:</strong> 10/11</p>
+      <a href="https://pixeldrain.com/u/TsNiTnMM">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+    <div class="card browser">
+      <h3>Opera 36</h3>
+      <p>Düşük sistemler için hafif sürüm.</p>
+      <p><strong>Windows:</strong> XP/Vista/7</p>
+      <a href="https://pixeldrain.com/u/wALRrvoQ">Pixeldrain'dan İndir</a> | <a href="#">VirusTotal</a>
+    </div>
+
+  </div>
+
+  <script>
+    function filterCards(category) {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
+      });
+    }
+    // Sayfa açıldığında tüm kartları göster
+    filterCards('all');
+  </script>
+</body>
+</html>
